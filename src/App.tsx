@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Todo from "./pages/Todo";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import SpTodo from "./pages/SpTodo";
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/todo" element={<Todo />} />
-        <Route path="/sp-todo" element={<Todo />} />
+        <Route path="/sp-todo" element={<SpTodo />} />
         <Route
           path="*"
           element={

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className=" w-full flex justify-between px-10 py-5">
+    <nav className=" w-full flex justify-between px-10 py-5 bg-slate-700">
       <div>
         <NavLink to={"/"}>Todo App</NavLink>
       </div>
