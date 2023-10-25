@@ -32,9 +32,11 @@ const App = () => {
 
   const handleEditTodo = () => {
     dispatch(editTodo({ id: editItem, title }));
+    setEditItem("");
   };
 
   const handleTodo = () => {
+    if (!title) return;
     if (editItem) {
       handleEditTodo();
     } else {
